@@ -154,17 +154,12 @@
 		</div>
 		<div class="search" style="display:none" hidden>
 		
-		<form id="kb_form" action="http://www.kubozy.net/index.php?m=vod-search" target="_blank" method="post">
-				<table>
-					<tr>
-						<td>
-							<input name="tn" type="hidden" value="baidu" />
-							<input type="text" class="i" name="wd" id="wd" size="30" />
-							
-						</td>
-					</tr>
-				</table>
-			</form>
+		<form class="navbar-form navbar-right hidden-xs" role="search" id="kb_form" action="https://www.yunbtv.com/search.php" method="post" target="_blank">
+                <div class="form-group">
+                    <input type="text" id="keyword" class="form-control" name="searchword" placeholder="搜索">
+                </div>
+                
+            </form>
 			</div>
 		<div class="search">
 			<form action="http://www.baidu.com/baidu" target="_blank">
@@ -179,7 +174,7 @@
 							</span>
 							<span class="btn_wr" >
 							<input type="button" value="找电影" class="btn" onclick="javascript:
-							document.getElementById('wd').value=document.getElementById('wd_search').value;
+							document.getElementById('keyword').value=document.getElementById('wd_search').value;
 							document.getElementById('kb_form').submit();
 							" />
 							</span>
@@ -429,6 +424,8 @@
 					<a href="http://www.51quzhe.com/index.php?r=index/wap" target="_blank">趣折网</a>
 				</dd>
 			</dl>
+			
+
 		</div>
 		<div class="footer">&copy2018 Palmer 版权所有</div>
 		</body>
